@@ -955,6 +955,19 @@ opacity: 0;
   width: 169px;
   height: 56px;
   padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-color); 
+
 }
+  

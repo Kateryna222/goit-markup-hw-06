@@ -704,7 +704,8 @@ overflow: hidden;
   margin-bottom: 16px;
 }
 
- .social-media-text {
+ .social-media-text,
+ .footer-subscribe-text {
 
   color: var(--primary-white-color);
   font-weight: 500; 
@@ -728,13 +729,59 @@ overflow: hidden;
   justify-content: center; 
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--click-color); 
 }
+
+.footer-subscribe {
+  display: block;
+margin-left: 88px;
+/* background-color: var(--title-text-color); */
+}
+
+.footer-subscribe-form-input {
+  position: relative;
+  font-size: 12px;
+  /* align-items: left; */
+  padding-left: 16px;
+  padding-top: 8px;
+  color: var(--primary-white-color);
+  background-color: var(--title-text-color);
+}
+
+.footer-subscribe-form-send {
+  position: absolute;
+}
+
+
+
+.footer-subscribe-btn {
+  display: block;
+    min-width: 169px;
+    height: 56px;
+    /* margin-top: 148; */
+    margin-right: 159px;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+
+
+
 /* ========================== /footer =============== */ 
 
 

@@ -510,14 +510,84 @@
     </div>
   
   </footer>  
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-     
+      
+      <span class="contact-form-title">
+        <p class="contact-form-text">
+          Leave your contacts and we will call you back</p>
+      </span>
+
+      <form class="contact-form" autocomplete="off">
+         <label class="contact-form-field-wrapper">
+         <span class="contact-form-field-disc">Name</span>
+          <span class="contact-form-input-wrapper">
+             <input class="contact-form-input" 
+                 type="text" 
+                 name="user_first_name"
+                 required
+                 pattern="[a-zA-Zя-яА-ЯїїіІїЇєЄґ']+"/>
+              <svg class="contact-form-input-icon">
+                  <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+          </span>
+         </span>
+         </label>
+        
+         <label class="contact-form-field-wrapper">
+          <span class="contact-form-field-disc">Phone</span>
+          <span class="contact-form-input-wrapper">
+            <input class="contact-form-input" 
+               type="tel" 
+               name="user_tel"
+               required
+               pattern="[0-9]{3}+[0-9]{3}+[0-9]{2}+[0-9]{2}"
+               title="xxx-xxx-xx-xx"/>
+               <svg class="contact-form-input-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+               </svg>
+            </span>
+          </label>
+        
+          <label class="contact-form-field-wrapper">
+            <span class="contact-form-field-disc">Email</span>
+            <span class="contact-form-input-wrapper">
+            <input class="contact-form-input" 
+               type="email" 
+               name="user_email"
+               required
+               pattern=""
+               title="xxxx@xxx.xx"/>
+               <svg class="contact-form-input-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+               </svg>
+              </span>
+            </label>
+          
+        
+            <label class="contact-form-field-wrapper">
+              <span class="contact-form-field-disc">Comment</span>
+              <textarea 
+              class="contact-form-massege"
+              name="user-massege" 
+              placeholder="Text input"
+            ></textarea>
+          </label>
+            
+        <label class="contact-form-checkbox-wrapper">
+          <input class="contact-form-checkbox" type="checkbox" name="user-policy" required>
+          I accept the terms and conditions of the
+          <a href="" class="contact-form-checkbox-policy">Privacy Policy</a>
+        </label>
+      </form>
+      
+      <button type="submit" class="contact-form-submit">Send</button>
+
     </div>
 
   </div>
@@ -525,3 +595,42 @@
  
 </body>
 </html>
+
+
+
+
+    
+        
+        
+        <!-- <div class="contact-form-field">
+           <input
+              type="text"
+              class="contact-form-input"
+              name="name"
+              id="name"
+              placeholder=" "
+              >
+           <label for="name" class="contact-form-label">Name</label>
+           <span class="icon">
+            <svg class="name-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+           </span>
+          </div>
+      
+          <div class="contact-form-field">
+           <input
+              type="email"
+              class="contact-form-input"
+              name="mail"
+              id="mail"
+              placeholder=" "
+              >
+           <label for="mail" class="contact-form-label">E-mail</label>
+           <span class="icon">
+            <svg class="name-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+           </span>
+          </div> -->
+

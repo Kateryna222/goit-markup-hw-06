@@ -737,21 +737,18 @@ overflow: hidden;
 
 .footer-subscribe {
   display: flex;
-margin-left: 88px;
-/* background-color: var(--title-text-color); */
+/* margin-left: 88px; */
+
 }
-.footer-subscribe-wrap (
+.footer-subscribe-wrap {
   gap: 24px;
-)
+}
 
 .footer-subscribe-form-input {
-  width: 164;
+  width: 264;
   height: 40;
-
-  position: relative;
-  font-size: 12px;
-  /* align-items: left; */
-
+  border: 1px solid var(--primary-white-color);
+  background-color: transparent;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -759,48 +756,36 @@ margin-left: 88px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--primary-white-color);
-  background-color: transparent;
 }
 
-
-  .footer-subscribe-form-input::placeholder {
-
+.footer-subscribe-form-input::placeholder {
+  color: var(--primary-white-color); 
   }
 
-
-
+.footer-subscribe-btn {
+  position: relative;
+  display: flex;
+    min-width: 165px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
 
 }
 
 .footer-subscribe-form-send {
   position: absolute;
+  margin-left: 16px;
 }
-
-
-
-.footer-subscribe-btn {
-  display: block;
-    min-width: 169px;
-    height: 56px;
-    /* margin-top: 148; */
-    margin-right: 159px;
-    padding: 16px 32px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: var(--main-font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    letter-spacing: 0.04em;
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
-
 
 
 /* ========================== /footer =============== */ 
@@ -885,16 +870,12 @@ margin-left: 88px;
 .contact-form-title {
   margin-top: 32px;
   margin-bottom: 16px;
-
-}
-.contact-form-text {
-  margin-top: 32px;
-  margin-bottom: 16px;
   font-style: 500;
   line-height: 1,3;
   text-align: center;
   color: var(--title-text-color);
 }
+
 
 
 .contact-form-label {
@@ -935,8 +916,8 @@ transform: translateY(-50px);
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
   color: var(--icon-customers);
 }
 

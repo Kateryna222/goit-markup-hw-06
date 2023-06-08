@@ -1009,7 +1009,7 @@ margin-left: 2px;
 
 .contact-form-own-checkbox-icon {
 padding: 3px;
-border: 1px solid #2E2F42;
+border: 1px solid var(--title-text-color);
 border-radius: 4px;
 cursor: pointer;
 margin-right: 6px;
@@ -1018,9 +1018,7 @@ margin-right: 6px;
 
 .contact-form-checkbox:checked + .contact-form-own-checkbox > .contact-form-checkmark-icon {
 opacity: 1;
-
 }
-
 
 .contact-form-checkmark-icon {
 opacity: 0;

@@ -743,7 +743,7 @@ overflow: hidden;
   margin-bottom: 16px;
 }
 .footer-subscribe-field {
-  display: block;
+  display: inline-block;
 }
 
 .footer-subscribe-wrapper {

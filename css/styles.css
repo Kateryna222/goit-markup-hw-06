@@ -262,7 +262,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   
 .page-navigation:hover,
 .page-navigation:focus {
-  color: var(--changecolor);
+  color: var(--change-color);
   background-color: var(--primary-white-color);
   }
 
@@ -313,7 +313,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
-  color: #404bbf;
+  color: var(--title-text-color);
   
 }
 

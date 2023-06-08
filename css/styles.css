@@ -703,13 +703,10 @@ overflow: hidden;
   margin-bottom: 16px;
 }
 
- .social-media-text,
- .footer-subscribe-text {
-
+ .social-media-text {
   color: var(--primary-white-color);
   font-weight: 500; 
   margin-bottom: 16px;
-
  }
 
 .footer-social-list {
@@ -735,11 +732,21 @@ overflow: hidden;
 }
 
 .footer-subscribe {
-  display: flex;
-/* margin-left: 88px; */
-
+  /* display: flex; */
+  margin-left: 88px;
 }
-.footer-subscribe-wrap {
+
+.footer-subscribe-text {
+
+  color: var(--primary-white-color);
+  font-weight: 500; 
+  margin-bottom: 16px;
+}
+.footer-subscribe-field {
+  display: block;
+}
+
+.footer-subscribe-wrapper {
   gap: 24px;
 }
 
@@ -760,7 +767,7 @@ overflow: hidden;
 .footer-subscribe-form-input::placeholder {
   color: var(--primary-white-color); 
   }
-
+  
 .footer-subscribe-btn {
   position: relative;
   display: flex;

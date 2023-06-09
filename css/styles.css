@@ -816,6 +816,7 @@ overflow: hidden;
 
 .modal {
   position: absolute;
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -865,21 +866,10 @@ overflow: hidden;
 
 /* =================form================== */
 
-.contact-form {
+.contact-form-field {
   margin-bottom: 8px; 
-
 }
 
-
-.contact-form-title {
-  /* margin-top: 32px; */
-  margin-bottom: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--title-text-color);
-}
 
 .contact-form-field-wrapper {
   display: block;
@@ -888,10 +878,18 @@ overflow: hidden;
   line-height: 1.17;
   letter-spacing: 0.04em; 
   color: var(--icon-customers)
-
-
 /* position: relative; */
 }
+
+.contact-form-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
 
 
 
@@ -987,6 +985,7 @@ transition: border-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   }
 .contact-form-checkbox-wrapper {
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -1005,6 +1004,7 @@ margin-left: 2px;
 }
 
 .contact-form-own-checkbox {
+  margin-bottom: 24px;
   color: var(--icon-customers);
   display: inline-flex; 
   align-items: center;

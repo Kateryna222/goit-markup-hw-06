@@ -741,9 +741,10 @@ overflow: hidden;
   color: var(--primary-white-color);
   font-weight: 500; 
   margin-bottom: 16px;
+  
 }
-.footer-subscribe-field {
-  display: inline-block;
+.footer-subscribe-form {
+  display: inline-flex; 
 }
 
 .footer-subscribe-wrapper {
@@ -752,7 +753,7 @@ overflow: hidden;
 
 .footer-subscribe-form-input {
   width: 264px;
-  height: 40px;
+  height: 100%;
   border: 1px solid var(--primary-white-color);
   background-color: transparent;
   font-size: 12px;
@@ -771,16 +772,10 @@ overflow: hidden;
 .footer-subscribe-btn {
   position: relative;
   display: flex;
+  margin-left: 24px;
+
     min-width: 165px;
     height: 40px;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--main-font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--primary-white-color);
     cursor: pointer;
     background-color: var(--accent-color);
     border: none;
@@ -788,9 +783,24 @@ overflow: hidden;
 
 }
 
+.footer-subscribe-text {
+  justify-content: left;
+  align-items: center;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+}
+
 .footer-subscribe-form-send {
   position: absolute;
   margin-left: 16px;
+  margin-bottom: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
 }
 
 
@@ -978,9 +988,6 @@ transition: border-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 
 .contact-form-checkbox {
   margin-bottom: 24px;
-
-  appearance: none;
-  position: absolute;
   } 
 
   .contact-form-checkbox-wrapper {
@@ -1019,7 +1026,8 @@ transition: border-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 .contact-form-own-checkbox-icon {
 padding: 3px;
 border: 1px solid var(--title-text-color);
-border-radius: 4px;
+width: 16px;
+height: 16px;
 cursor: pointer;
 margin-right: 6px;
 }
@@ -1048,7 +1056,7 @@ opacity: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1056,14 +1064,14 @@ opacity: 0;
   border-radius: 4px;
   cursor: pointer;
   font-family: var(--main-font-family);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
   background-color: var(--accent-color); 
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   

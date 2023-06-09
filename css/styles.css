@@ -883,17 +883,18 @@ overflow: hidden;
 
 
 .contact-form-field-wrapper {
+  position: relative;
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em; 
   color: var(--icon-customers)
+} 
 /* position: relative;
   position: absolute;
   top: 0;
-  left: 0;
-} */
+  left: 0; */
 
 .contact-form-input-wrapper {
   position: relative;
@@ -921,7 +922,7 @@ transform: translateY(-50px);
 }
 
 
-
+/* 
 .contact-form-field-disc {
   display: block;
   margin-bottom: 4px;
@@ -929,12 +930,12 @@ transform: translateY(-50px);
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: var(--icon-customers);
-}
+} */
 
 
 .contact-form-input-icon {
   position: absolute;
-  /* display: block; */
+  display: block;
   width:  12px;
   height: 12px;
  

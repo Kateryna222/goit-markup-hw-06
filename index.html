@@ -548,7 +548,7 @@
                   <input class="contact-form-input"     
                     id="user-name"
                     type="text" 
-                    name="user_name"
+                     name="user-name"
                     required
                     pattern="[a-zA-Zя-яА-ЯїїіІїЇєЄґ']+"
                     >
@@ -592,33 +592,30 @@
 
              <div class="contact-form-field-comment">
                <label for="user-comment" class="contact-form-field-wrapper">Comment</label>
-                <div class="contact-form-field-disc">
-                  <textarea 
-                  id="user-comment" 
+                <textarea 
+                  id="user-comment"
                   class="contact-form-comment"
                   name="user-comment" 
                   placeholder="Text input"
-                  ></textarea>
+                ></textarea>
                 </div>
              </div>
                  
             <div class="contact-form-checkbox">
               <input class="contact-form-checkbox-input visually-hidden"
-              type="checkbox"  
-              id="user-privacy" 
-              value="true" 
-              required
-              >
-
-              <div class="contact-form-own">
-                <svg class="contact-form-own-checkbox-icon" width="10" height="8">
-                  <use class="contact-form-checkmark-icon" href="./images/icons.svg#icon-checkmark"></use>
-               </svg>
-                <label for="user-privacy" class="contact-form-checkbox-wrapper">I accept the terms and conditions of the
-                  <a href="" class="contact-form-checkbox-privacy">Privacy Policy</a>
-                </label>
-      
-              </div>
+                 type="checkbox"  
+                 id="user-privacy" 
+                 value="true" 
+                 name="user-privacy"
+                 required
+                 >
+              <label for="user-privacy" class="contact-form-checkbox-wrapper">I accept the terms and conditions of the
+                  <a href="" class="contact-form-checkbox-privacy">Privacy Policy</a></label>
+              <span class="contact-form-own">
+                  <svg class="contact-form-own-checkbox-icon" width="10" height="8">
+                    <use class="contact-form-checkmark-icon" href="./images/icons.svg#icon-checkmark"></use>
+                  </svg>
+              </span>
              
             </div>
 

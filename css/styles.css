@@ -816,7 +816,7 @@ overflow: hidden;
 
 .modal {
   position: absolute;
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -831,7 +831,7 @@ overflow: hidden;
 }
 
 .modal-container {
-  72px 24px 24px 24px;
+ padding:  72px 24px 24px 24px;
 }
 
 .modal-close-btn {

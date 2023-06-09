@@ -866,20 +866,6 @@ overflow: hidden;
 
 /* =================form================== */
 
-.contact-form-field {
-  margin-bottom: 8px; 
-}
-
-
-.contact-form-field-wrapper {
-  display: block;
-  margin-bottom: 26px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em; 
-  color: var(--icon-customers)
-/* position: relative; */
-}
 
 .contact-form-title {
   margin-bottom: 16px;
@@ -891,15 +877,23 @@ overflow: hidden;
 }
 
 
+.contact-form-field {
+  margin-bottom: 8px; 
+}
 
 
-
-.contact-form-label {
+.contact-form-field-wrapper {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em; 
+  color: var(--icon-customers)
+/* position: relative;
   position: absolute;
   top: 0;
   left: 0;
-}
-
+} */
 
 .contact-form-input-wrapper {
   position: relative;

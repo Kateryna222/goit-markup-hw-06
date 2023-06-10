@@ -986,10 +986,11 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
-.contact-form-checkbox-input:checked {
+.contact-form-checkbox-input:checked + .contact-form-checkbox-wrapper{
   background-color: var(--change-color);
   border: none; 
-  fill: var(--backgound-Team-cloud)
+  fill: var(--backgound-Team-cloud);
+  border-color: var(--change-color)
 } 
 
 

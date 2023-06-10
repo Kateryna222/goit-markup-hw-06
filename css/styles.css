@@ -989,6 +989,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .contact-form-checkbox-wrapper {
 
   /* display: flex; */
+  display: inline-flex; 
   align-items: center;
   font-size: 12px;
   line-height: 1.17;
@@ -1009,31 +1010,27 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--change-color);
   border: none; 
   fill: var(--backgound-Team-cloud);
-
 } 
 
 
 .contact-form-own-checkbox {
-
   width: 16px; 
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 6px;
   border-radius: 2px;
-  display: inline-flex; 
+  /* display: inline-flex;  */
   align-items: center;
   justify-content: center; 
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+  
 .contact-form-own-checkbox-icon {
 padding: 3px;
 }
 
-.contact-form-checkbox:checked + .ontact-form-own-checkbox > .contact-form-checkmark-icon {
-opacity: 1;
-}
+
 
 .contact-form-checkbox-privacy {
 margin-left: 2px;
@@ -1049,7 +1046,9 @@ color: var(--accent-color);
 .contact-form-checkmark-icon {
 opacity: 0;
 }
-
+.contact-form-checkbox:checked + .contact-form-own-checkbox > .contact-form-checkmark-icon {
+  opacity: 1;
+}
 
 
 .contact-form-submit {

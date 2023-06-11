@@ -269,6 +269,10 @@ padding-right: 16px;
 
 }
 
+.header-contacts{
+  display: none;
+}
+
 .page-header {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -337,9 +341,7 @@ display: block;
 
 
 
-.header-contacts .contact-tel {
-  display: none;
-}
+
 
 .hero-btn {
   display: none;

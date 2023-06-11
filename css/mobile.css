@@ -1,5 +1,5 @@
 
-/* цвет основного текста  #2E2F42 */
+цвет основного текста  #2E2F42
 /* вторичный цвет основного текста #434455*/
 /* белый #FFFFFF*/
 /* акцент #4D5AE5*/
@@ -8,7 +8,7 @@
 /* цвет логотипа синий #4D5AE5 */
 /* цвет логотипа белый #F4F4FD */
 
-/* 
+
 
 :root {
   --main-font-family: "Roboto", sans-serif;
@@ -24,11 +24,11 @@
   --icon-color: #f4f4fd;
   --icon-customers:  #8e8f99;
   --click-color: #31d0aa;
-  /* --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  /* --modal-window: #FCFCFC; */
-/* }  */
+  /* --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* --modal-window: #FCFCFC;  */
+}
 
-/* html {
+ html {
   box-sizing:border-box
 }
 

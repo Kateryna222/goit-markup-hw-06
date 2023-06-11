@@ -10,7 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <!-- <link href=“./styles/style.css” rel=“stylesheet” />  -->
+    <link href="./styles/mobile.css" rel="stylesheet" />  
+    <!-- <link href="./styles/tablet.css" rel="stylesheet" />
+    <link href="./styles/desktop.css" rel="stylesheet" /> -->
+
 
  </head>
    
@@ -27,13 +32,27 @@
           <li class="menu-item">
              <a href="" class="menu-link link">Contacts</a></li>
         </ul>
+        <button 
+        type="button" 
+        class="menu-button"  
+        aria-expanded="false"
+        aria-controls="menu-container">
+          <svg  width="8" height="8" aria-label="choose menu">
+            <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" menu-container>
+
+        </div>
       </nav> 
       <address class="header-adress">
         <ul class="header-asdress-list list">
              <li class="menu-item">
                <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
               <li class="menu-item">
-                <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <a class="header-contacts contact-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>  
     </div>
@@ -539,16 +558,16 @@
             </svg>
           </button>
       
-            <p class="contact-form-title">Leave your contacts and we will call you back</p>
+          <p class="contact-form-title">Leave your contacts and we will call you back</p>
          
           <form class="contact-form">
-           <div class="contact-form-field">
+            <div class="contact-form-field">
              <label for="user-name" class="contact-form-field-wrapper">Name</label>
                 <div class="contact-form-input-wrapper">
                   <input class="contact-form-input"     
                     id="user-name"
                     type="text" 
-                    name="user_name"
+                     name="user-name"
                     required
                     pattern="[a-zA-Zя-яА-ЯїїіІїЇєЄґ']+"
                     >
@@ -592,41 +611,37 @@
 
              <div class="contact-form-field-comment">
                <label for="user-comment" class="contact-form-field-wrapper">Comment</label>
-                <div class="contact-form-field-disc">
-                  <textarea 
-                  id="user-comment" 
-                  class="contact-form-comment"
+                <textarea 
+                  class="contact-form-message"
+                  id="user-comment"
                   name="user-comment" 
                   placeholder="Text input"
-                  ></textarea>
-                </div>
+                ></textarea>
              </div>
                  
-            <div class="contact-form-checkbox">
-              <input class="contact-form-checkbox-input visually-hidden"
-              type="checkbox"  
-              id="user-privacy" 
-              value="true" 
-              required
-              >
-
-              <div class="contact-form-own">
-                <svg class="contact-form-own-checkbox-icon" width="10" height="8">
-                  <use class="contact-form-checkmark-icon" href="./images/icons.svg#icon-checkmark"></use>
-               </svg>
-                <label for="user-privacy" class="contact-form-checkbox-wrapper">I accept the terms and conditions of the
-                  <a href="" class="contact-form-checkbox-privacy">Privacy Policy</a>
-                </label>
-      
-              </div>
-             
-            </div>
+             <div class="contact-form-checkbox">
+               <input class="contact-form-checkbox-input visually-hidden"
+                 type="checkbox"  
+                 id="user-privacy" 
+                 value="true" 
+                 name="user-privacy"
+                 required
+                 >
+                <label for="user-privacy" class="contact-form-checkbox-wrapper"> 
+                  <span class="contact-form-own-checkbox">
+                    <svg class="contact-form-own-checkbox-icon" width="10" height="8">
+                      <use class="contact-form-checkmark-icon" href="./images/icons.svg#icon-checkmark"></use>
+                    </svg>
+                  </span>
+                  I accept the terms and conditions of the 
+                  <a href="" class="contact-form-checkbox-privacy">Privacy Policy</a></label>
+             </div>
 
             <button type="submit" class="contact-form-submit">Send</button>
  
 
-         </form>      
-        </div>
+          </form>      
+      </div>
         
         
     </div>
